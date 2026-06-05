@@ -9,16 +9,16 @@ from telethon import utils
 from telethon.sync import TelegramClient
 from telethon.tl.functions.messages import GetDialogFiltersRequest
 
-# Điền API ID dạng số, không có dấu ngoặc kép. Ví dụ: api_id = 123456
+# Enter your API ID as a number, without quotes. Example: api_id = 123456
 api_id = YOUR_API_ID_HERE
 
-# Điền API hash dạng chuỗi, giữ dấu ngoặc kép.
+# Enter your API hash as text, keep the quotes.
 api_hash = "YOUR_API_HASH_HERE"
 
-# Tên folder Telegram cần lọc group, giữ dấu ngoặc kép.
+# Telegram folder name to scan for groups, keep the quotes.
 FOLDER_NAME = "YOUR_TELEGRAM_FOLDER_NAME_HERE"
 
-# Tên file session local. Không push file .session lên Git.
+# Local session file name. Do not push the .session file to Git.
 client = TelegramClient("YOUR_SESSION_NAME_HERE", api_id, api_hash)
 
 
